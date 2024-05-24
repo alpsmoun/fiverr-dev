@@ -1,0 +1,27 @@
+{
+	"name": "fiverr-helper",
+	"version": "1.0.0",
+	"description": "Fiverr helper to get user list",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "webpack --watch",
+		"build": "webpack"
+	},
+	"keywords": [
+		"chrome extension",
+		"fiverr helper"
+	],
+	"author": "DevGuy",
+	"license": "ISC",
+	"devDependencies": {
+		"webpack": "^5.45.1",
+		"webpack-cli": "^4.7.2"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"dexie": "^3.0.3",
+		"jquery": "^3.6.0",
+		"moment": "^2.29.1"
+	}
+}

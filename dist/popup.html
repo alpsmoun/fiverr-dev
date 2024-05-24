@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#container {
+				width: 300px;
+				height: fit-content;
+				padding-top: 16px;
+				padding-bottom: 16px;
+				display: flex;
+				flex-direction: column;
+			}
+
+			h4 {
+				margin: 0px;
+			}
+
+			button {
+				flex: 1;
+        height: 28px;
+				margin-left: 2px;
+				margin-right: 2px;
+			}
+
+			div div span {
+				color: red;
+			}
+
+			.row-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				margin: 4px;
+			}
+
+			.column-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				margin: 2px;
+			}
+
+			.column-container b {
+				font-size: x-small;
+			}
+
+			.custom-input {
+				width: 48px;
+        height: 22px;
+			}
+
+			.custom-check {
+				width: 16px;
+				height: 16px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="container">
+			<div class="loading">
+				<span><b>loading...</b></span>
+			</div>
+			<div class="row-container">
+				<h4>Status:</h4>
+				<span id="current-status">...</span>
+			</div>
+			<div class="row-container">
+				<h4>Category:</h4>
+				<span id="current-category">0/0</span>
+			</div>
+			<div class="row-container">
+				<h4>Category Users:</h4>
+				<span id="current-progress">0/0</span>
+			</div>
+			<div class="row-container">
+				<button id="refresh-category">Refresh Cat.</button>
+				<button id="export-users">Export Users</button>
+			</div>
+			<div class="row-container">
+				<div class="column-container">
+					<span><b>start</b></span>
+					<input
+						type="checkbox"
+						name="category-check"
+						id="category-check"
+						class="custom-check"
+					/>
+				</div>
+				<input
+					type="text"
+					name="category-input"
+					id="category-input"
+					class="custom-input"
+					placeholder="Cat."
+				/>
+				<button id="update-users">Update Users</button>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
